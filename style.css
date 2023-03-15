@@ -14,20 +14,23 @@ body {
   #3C2A21;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
-  padding: 15px;
+  border-radius: 10px;
+  padding: 18px;
   width: 25%;
   height: 80%;
   font-size: 1.5rem;
  
 }
 .display{
+  font-size: 3rem;
   text-align: end;
   padding-right: 1rem;
   background-color: #8C766B ;
   border-radius: 5px;
   margin-bottom: 20px;
+  margin-top: auto;
   height: 40%;
+  box-shadow: 2px 4px 4px black ;
 }
 .btnContainer{
   display: grid;
@@ -45,6 +48,7 @@ button{
   width: 5rem;
   height: 5rem;
   border-radius: 50%; 
+  box-shadow: 3px 6px 6px ;
 }
 #zeroBtn{
   grid-column-start:1 ;
@@ -55,4 +59,10 @@ button{
 
 .active{
   background-color:#d5b9ac ;  
+}
+button:hover{
+  background-color: #dec3b6;
+}
+[data-operator]:focus{
+  background-color: white;
 }
