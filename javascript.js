@@ -1,8 +1,8 @@
 const buttons = document.querySelectorAll('button');
 const input = document.querySelector('#input');
 const output = document.querySelector('#output');
-const clrBtn = document.querySelector('.clrBtn');
-const delBtn = document.querySelector('.delBtn');
+const acBtn = document.querySelector('#acBtn');
+const cBtn = document.querySelector('#cBtn');
 const add = function(x,y){
   return x + y;
 }
@@ -55,12 +55,14 @@ buttons.forEach(function(button){
       
       
     }
-    else if(button.textContent=='Clear'){
+    else if(button.textContent=='AC'){
       clearDisplay();
       clearVal();
     }
+    
 
     else{
+      
         clearDisplay();
         inputVal = button.textContent;
         input.textContent += inputVal
