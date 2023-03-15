@@ -89,10 +89,11 @@ function processKeyInput(e){
     addNumber(e.key);
   if (e.key === '.') addDecimal();
   if (e.key === 'Backspace') backSpace();
-  if (e.key === 'Enter') execute();
+  if (e.key === 'Enter' || e.key === '=') execute();
   if (e.key === 'Escape') clearAll();
   if (e.key === '+' || e.key === '-' || e.key === 'x' || e.key === '/' || e.key === '%')
   addOperator(convertOperatorKey(e.key));
+  console.log(e.key);
 
 }
 function convertOperatorKey(key){
